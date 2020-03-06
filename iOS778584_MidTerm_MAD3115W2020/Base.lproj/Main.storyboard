@@ -67,6 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="ZYZ-cb-kt0"/>
                     </view>
                     <navigationItem key="navigationItem" title="Customer" id="xgS-Yk-vu7">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="p0i-ji-mN0"/>
                         <barButtonItem key="rightBarButtonItem" title="New Customer" id="wg3-gN-XWj"/>
                     </navigationItem>
                 </viewController>
