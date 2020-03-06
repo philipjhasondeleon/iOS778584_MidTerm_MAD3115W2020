@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS778584_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,13 +50,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="a9U-jo-yGf"/>
+                    <navigationItem key="navigationItem" title="Sign In" id="a9U-jo-yGf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Customer-->
         <scene sceneID="8Xb-E1-vug">
             <objects>
                 <viewController id="D6o-yU-wQQ" sceneMemberID="viewController">
@@ -66,7 +66,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZYZ-cb-kt0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xgS-Yk-vu7"/>
+                    <navigationItem key="navigationItem" title="Customer" id="xgS-Yk-vu7">
+                        <barButtonItem key="rightBarButtonItem" title="New Customer" id="wg3-gN-XWj"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWc-dS-e7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
