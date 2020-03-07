@@ -12,8 +12,21 @@ class CustomerListTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.navigationController?.hidesBarsOnTap = true
+        //color of navigation bar
+        self.navigationController?.navigationBar.backgroundColor = UIColor.red
+        
+        
+        //let vc = self.navigationController?.viewControllers[1]
+        //self.navigationController?.popToViewController(vc!, animated: true)
 
-        // Do any additional setup after loading the view.
+        
+    }
+    @IBAction func bbLogOut(_ sender: UIBarButtonItem)
+    {
+        self.navigationController?.popViewController(animated: true)
     }
     
 

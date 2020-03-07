@@ -53,6 +53,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="a9U-jo-yGf"/>
                     <connections>
+                        <outlet property="swRememberMe" destination="W9d-fe-a72" id="EgU-Ns-qPV"/>
                         <outlet property="txtPassWord" destination="mcu-Ds-9TY" id="0sl-4B-drT"/>
                         <outlet property="txtUserName" destination="nmC-mP-Dp3" id="ROf-VM-Ojx"/>
                     </connections>
@@ -72,7 +73,11 @@
                         <viewLayoutGuide key="safeArea" id="ZYZ-cb-kt0"/>
                     </view>
                     <navigationItem key="navigationItem" title="Customer" id="xgS-Yk-vu7">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="p0i-ji-mN0"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="p0i-ji-mN0">
+                            <connections>
+                                <action selector="bbLogOut:" destination="D6o-yU-wQQ" id="0db-wm-dbh"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New Customer" id="wg3-gN-XWj">
                             <connections>
                                 <segue destination="HaS-1y-hX8" kind="show" id="sZm-8H-Ph7"/>

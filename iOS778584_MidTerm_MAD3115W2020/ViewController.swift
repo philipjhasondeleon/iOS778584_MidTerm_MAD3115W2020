@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var swRememberMe: UISwitch!
     @IBOutlet weak var txtUserName: UITextField!
     @IBOutlet weak var txtPassWord: UITextField!
     
@@ -53,5 +54,5 @@ class ViewController: UIViewController {
         }
     }
 }
-    
+
 
