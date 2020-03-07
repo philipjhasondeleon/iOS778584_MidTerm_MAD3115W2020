@@ -40,7 +40,7 @@
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="btnSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EyY-jn-B4E"/>
-                                    <segue destination="D6o-yU-wQQ" kind="show" id="300-Vl-d55"/>
+                                    <segue destination="f0a-DP-oZm" kind="show" id="9pf-XC-pB1"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W9d-fe-a72">
@@ -62,33 +62,6 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
         </scene>
-        <!--Customer-->
-        <scene sceneID="8Xb-E1-vug">
-            <objects>
-                <viewController id="D6o-yU-wQQ" customClass="CustomerListTableViewController" customModule="iOS778584_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QIE-Q3-p90">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="ZYZ-cb-kt0"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Customer" id="xgS-Yk-vu7">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="p0i-ji-mN0">
-                            <connections>
-                                <action selector="bbLogOut:" destination="D6o-yU-wQQ" id="0db-wm-dbh"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="New Customer" id="wg3-gN-XWj">
-                            <connections>
-                                <segue destination="HaS-1y-hX8" kind="show" id="sZm-8H-Ph7"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rWc-dS-e7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1728.985507246377" y="138.61607142857142"/>
-        </scene>
         <!--New Customer-->
         <scene sceneID="12L-TY-YNW">
             <objects>
@@ -104,6 +77,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAd-82-Ijx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2420" y="139"/>
+        </scene>
+        <!--Customers-->
+        <scene sceneID="zxA-yq-g9z">
+            <objects>
+                <tableViewController id="f0a-DP-oZm" customClass="CustomerListTableViewController" customModule="iOS778584_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UgZ-SN-LHU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="G7u-F8-cK8">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G7u-F8-cK8" id="WAa-2X-eTf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="f0a-DP-oZm" id="lp5-9G-F6l"/>
+                            <outlet property="delegate" destination="f0a-DP-oZm" id="5E9-Wc-5Dj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Customers" id="dmu-sj-rkf">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="744-p3-D5y">
+                            <connections>
+                                <action selector="bbLogOut:" destination="f0a-DP-oZm" id="KO6-em-PNg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="New Customer" id="yav-bE-Gsw">
+                            <connections>
+                                <segue destination="HaS-1y-hX8" kind="show" id="4A3-6A-bq9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fcg-ah-Xcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uoJ-To-2Ek">

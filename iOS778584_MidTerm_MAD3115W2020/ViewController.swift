@@ -18,6 +18,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Day3SegueAndNavigationVCExample
+        //when tap hides the bar on top
+        //self.navigationController?.hidesBarsOnTap = true
+        
+        //color of navigation bar
+        self.navigationController?.navigationBar.backgroundColor = UIColor.green
         
     }
 
@@ -41,7 +47,7 @@ class ViewController: UIViewController {
                             print("Valid User")
                             }else  {
                                       let alertController = UIAlertController(title: "Login Failed!", message:
-                                      "Username or Password do not match", preferredStyle: .actionSheet)
+                                      "Invalid user id or password", preferredStyle: .actionSheet)
                                       alertController.addAction(UIAlertAction(title: "Try Again", style: .cancel))
                                     
                                       
