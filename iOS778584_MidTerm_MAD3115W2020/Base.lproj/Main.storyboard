@@ -113,7 +113,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="iaS-OL-i9a"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Customer" id="sy3-9J-Wm1"/>
+                    <navigationItem key="navigationItem" title="New Customer" id="sy3-9J-Wm1">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="8tj-dv-cXL"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtEmail" destination="MRO-8l-MyI" id="iYH-P8-aak"/>
                         <outlet property="txtFirstName" destination="O3n-jn-Ncv" id="1EX-Fc-iBF"/>

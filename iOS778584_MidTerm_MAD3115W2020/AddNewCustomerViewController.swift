@@ -25,10 +25,19 @@ class AddNewCustomerViewController: UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        saveButton()
 
         // Do any additional setup after loading the view.
     }
     
+    
+    private func saveButton()
+    {
+     let btnSave=UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(AddNewCustomerViewController.saveCustomer(sender:)))
+       
+      navigationItem.rightBarButtonItem=btnSave
+    }
     @objc
     func saveCustomer(sender: UIBarButtonItem)
     {
