@@ -43,7 +43,7 @@ class AddNewCustomerViewController: UIViewController
     {
        
      let sb1=UIStoryboard(name: "Main", bundle: nil)
-     let secondVC = sb1.instantiateViewController(identifier: "secondVC") as! CustomerListTableViewController
+     let CustomerListVC = sb1.instantiateViewController(identifier: "CustomerListVC") as! CustomerListTableViewController
      
      let fName = txtFirstName.text
        let lName = txtLastName.text
