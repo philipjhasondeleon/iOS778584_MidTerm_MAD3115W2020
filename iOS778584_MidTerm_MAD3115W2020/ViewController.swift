@@ -26,9 +26,25 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.backgroundColor = UIColor.green
         
     }
+    func rememberMeSwitchValue()
+    {
+        let userDefault = UserDefaults.standard
+        
+        if let username = userDefault.string(forKey: "username")
+        {
+            txtUserName.text = username
+            
+            if let password = userDefault.string(forKey: "password")
+            {
+                txtPassWord.text = password
+            }
+        }
+    }
 
     @IBAction func btnSignIn(_ sender: UIButton)
         {
+            let username:String=txtUserName.text!
+            let password:String=txtPassWord.text!
             if let bundlePath = Bundle.main.path(forResource: "UserInfo", ofType: "plist")
             {
                 if let dictionary = NSMutableDictionary(contentsOfFile: bundlePath)
@@ -38,10 +54,9 @@ class ViewController: UIViewController {
                         var flag = false
                         for userList in users
                         {
-                            if userList["username"] == txtUserName.text && userList["password"] == txtPassWord.text
+                            if userList["username"] == username && userList["password"] == password
                             {
                                 flag = true
-                                
                             }
                             if flag == true{
                             print("Valid User")

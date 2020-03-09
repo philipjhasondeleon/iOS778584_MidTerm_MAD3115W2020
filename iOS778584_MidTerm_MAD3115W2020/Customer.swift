@@ -14,7 +14,12 @@ class Customer
     var id : Int
     var firstName : String
     var lastName : String
+    var fullName : String
+    {
+        return "\(firstName) \(lastName)"
+    }
     var email : String
+    
     
     
     init(id : Int, firstName: String, lastName:String, email: String)
