@@ -8,13 +8,14 @@
 
 import UIKit
 
-class CustomerListTableViewController: UITableViewController {
+class CustomerListTableViewController :UIViewController,UITableViewDelegate,UITableViewDataSource
+{
 
     
     @IBOutlet weak var tblCustomer: UITableView!
-    var firstName: String
-    var lastName: String
-    var email: String
+    var firstName: String!
+    var lastName: String!
+    var email: String!
     lazy var CustomerCell: [Customer] = []
     
     var tempvar = DataStorage.getInstance()
@@ -23,13 +24,10 @@ class CustomerListTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let getdata = DataStorage.getInstance()
-        getdata.createCustomer()
+        getdata.createCust()
         
         tblCustomer.delegate = self
         tblCustomer.delegate = self
-        
-        
-        loadCustomers()
         
     }
     @IBAction func bbLogOut(_ sender: UIBarButtonItem)
@@ -37,37 +35,34 @@ class CustomerListTableViewController: UITableViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    
-    func loadCustomers()
-    {
-        customerNames.append(Customer(id: 1, firstName: "Philip", lastName: "DeLeon", email: "jhasondeleon@gmail.com"))
-        customerNames.append(Customer(id: 2, firstName: "Philip", lastName: "DeLeon", email: "jhasondeleon@gmail.com"))
+
+
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+         return 1
+       }
         
-    }
-}
-
-
-
-
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tempvar.returnCount
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerCell")
+       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         return tempvar.returnCount()
+       }
         
-        let customer = customerNames[indexPath.row]
-        cell?.textLabel?.text = customer.name
-        return cell!
+       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+       {
+         let x = tempvar.returnCustObject(custID: Int(indexPath.row+1))
+         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerCell", for: indexPath)
+         cell.textLabel?.text = x?.fullName
+          return cell
+       }
+       func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+         return "List of Customers"
+       }
+        
+       override func viewWillAppear(_ animated: Bool) {
+           tblCustomer.reloadData()
+           
+         }
     }
-    
-    func numberOfSections(in tableView: UITableView) -> Int
-    {
-        return 1
-    }
-}
+
     
     
     
