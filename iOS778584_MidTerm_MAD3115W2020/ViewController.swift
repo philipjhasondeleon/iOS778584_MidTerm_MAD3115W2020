@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         //self.navigationController?.hidesBarsOnTap = true
         
         //color of navigation bar
-        self.navigationController?.navigationBar.backgroundColor = UIColor.green
+        self.navigationController?.navigationBar.backgroundColor = UIColor.black
         
     }
     func rememberMeSwitchValue()
