@@ -161,7 +161,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="L7X-mu-3pl"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add New Bill" id="EEM-lb-foy"/>
+                    <navigationItem key="navigationItem" title="Add New Bill" id="EEM-lb-foy">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="AaE-yk-aqD"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb9-kx-Tv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
