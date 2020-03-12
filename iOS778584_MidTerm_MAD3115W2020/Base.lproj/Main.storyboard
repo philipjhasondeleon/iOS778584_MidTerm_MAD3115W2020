@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAd-82-Ijx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2418.840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="2668" y="-200"/>
         </scene>
         <!--Bill Details-->
         <scene sceneID="YU5-1J-8Oc">
@@ -140,12 +140,32 @@
                         <viewLayoutGuide key="safeArea" id="Iy0-Np-Kuq"/>
                     </view>
                     <navigationItem key="navigationItem" title="Bill Details" id="OHQ-Gn-1Q4">
-                        <barButtonItem key="rightBarButtonItem" title="Add New Bill" id="YlN-gc-WRq"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add New Bill" id="YlN-gc-WRq">
+                            <connections>
+                                <segue destination="gvg-wN-IfV" kind="show" id="znt-hI-fMB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eev-R2-4EQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3119" y="139"/>
+            <point key="canvasLocation" x="2667" y="482"/>
+        </scene>
+        <!--Add New Bill-->
+        <scene sceneID="U4y-hT-QxU">
+            <objects>
+                <viewController id="gvg-wN-IfV" customClass="AddNewBillViewControllerViewController" customModule="iOS778584_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oq8-lo-dHT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="L7X-mu-3pl"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add New Bill" id="EEM-lb-foy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bb9-kx-Tv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3454" y="139"/>
         </scene>
         <!--Customers-->
         <scene sceneID="zxA-yq-g9z">
