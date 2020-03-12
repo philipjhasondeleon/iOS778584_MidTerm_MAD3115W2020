@@ -129,6 +129,22 @@
             </objects>
             <point key="canvasLocation" x="2418.840579710145" y="138.61607142857142"/>
         </scene>
+        <!--Bill Details-->
+        <scene sceneID="YU5-1J-8Oc">
+            <objects>
+                <viewController id="3A9-SE-3g8" customClass="ShowBillDetailsViewController" customModule="iOS778584_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ozy-pg-1f1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Iy0-Np-Kuq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bill Details" id="OHQ-Gn-1Q4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eev-R2-4EQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3119" y="139"/>
+        </scene>
         <!--Customers-->
         <scene sceneID="zxA-yq-g9z">
             <objects>
@@ -154,6 +170,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="3A9-SE-3g8" kind="show" id="Xz6-Te-thG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -170,7 +189,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New Customer" id="yav-bE-Gsw">
                             <connections>
-                                <segue destination="HaS-1y-hX8" kind="show" id="4A3-6A-bq9"/>
+                                <segue destination="HaS-1y-hX8" kind="show" id="qYa-qH-7qo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

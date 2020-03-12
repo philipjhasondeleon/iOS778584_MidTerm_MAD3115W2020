@@ -16,6 +16,7 @@
 		9B9BD40C24130CDA00490079 /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9BD40B24130CDA00490079 /* AddNewCustomerViewController.swift */; };
 		9B9BD43A24131E7100490079 /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B9BD43924131E7100490079 /* UserInfo.plist */; };
 		9BA9D0AB2416E877008D5C01 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9D0AA2416E877008D5C01 /* DataStorage.swift */; };
+		9BAF2B4D2419C198001C83A6 /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF2B4C2419C198001C83A6 /* ShowBillDetailsViewController.swift */; };
 		9BD73914241465CA005D282A /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD73913241465CA005D282A /* CustomerListTableViewController.swift */; };
 		9BD7392024148868005D282A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7391F24148868005D282A /* Customer.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		9B9BD40B24130CDA00490079 /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
 		9B9BD43924131E7100490079 /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 		9BA9D0AA2416E877008D5C01 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		9BAF2B4C2419C198001C83A6 /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 		9BD73913241465CA005D282A /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		9BD7391F24148868005D282A /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 				9B9BD43924131E7100490079 /* UserInfo.plist */,
 				9BD7391F24148868005D282A /* Customer.swift */,
 				9BA9D0AA2416E877008D5C01 /* DataStorage.swift */,
+				9BAF2B4C2419C198001C83A6 /* ShowBillDetailsViewController.swift */,
 			);
 			path = iOS778584_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				9BD73914241465CA005D282A /* CustomerListTableViewController.swift in Sources */,
 				9BA9D0AB2416E877008D5C01 /* DataStorage.swift in Sources */,
 				9B63D0C42411BAD300259835 /* SceneDelegate.swift in Sources */,
+				9BAF2B4D2419C198001C83A6 /* ShowBillDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
