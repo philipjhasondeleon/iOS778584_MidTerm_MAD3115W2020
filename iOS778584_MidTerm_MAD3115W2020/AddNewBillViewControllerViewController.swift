@@ -14,13 +14,15 @@ enum PickerType:Int {
 class AddNewBillViewControllerViewController: UIViewController {
 
     @IBOutlet weak var textField_Date: UITextField!
-
     @IBOutlet weak var pickerBillType: UIPickerView!
     @IBOutlet weak var textBillType: UITextField!
     
-    var billType = ["Hydro", "Internet", "Mobile"]
     
+    
+    var billType = ["Hydro", "Internet", "Mobile"]
     var datePicker : UIDatePicker!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +78,20 @@ class AddNewBillViewControllerViewController: UIViewController {
     
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 extension AddNewBillViewControllerViewController:UIPickerViewDelegate
 {

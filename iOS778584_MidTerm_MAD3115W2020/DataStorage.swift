@@ -13,7 +13,9 @@ class DataStorage
 {
     
 private var customerDictionary = [Int:Customer]()
- 
+    private var billDictionary = [Int: Bill]()
+    
+    
 private static var obj = DataStorage()
  
  
@@ -23,7 +25,48 @@ internal static func getInstance() -> DataStorage
 {
   return obj
 }
- 
+
+func addNewBill(Bill_Id: Int, Bill_Date: Date, Bill_Type: String, Total_Bill_Amount: Double)
+{
+    let b = billDictionary.count + 1
+    
+    let temp1 = Bill(billId: b, billDate: Bill_Date, billType: Bill_Type, totalBillAmount: Total_Bill_Amount)
+    self.AddBill(bill: temp1)
+    }
+    
+    func returnBillObject(billID : Int) -> Bill?
+    {
+        for(k1,v1) in billDictionary
+        {
+            if billID == k1
+            {
+                return v1
+                
+            }
+        }
+        return nil
+    }
+    
+    func returnCount1() -> Int
+    {
+        return billDictionary.count
+    }
+    
+    func createBill()
+    {
+        let b1 = Bill(billId: 1, billDate: Date(), billType: "Hydro", totalBillAmount: 123.50)
+        AddBill(bill: b1)
+    }
+    
+    func AddBill(bill : Bill)
+    {
+        billDictionary.updateValue(bill, forKey: bill.billId)
+    }
+    
+    
+
+    
+    
 func addNewCustomer(First_Name : String, Last_Name : String, email : String)
 {
   let c = customerDictionary.count + 1
@@ -63,6 +106,7 @@ func createCust()
     AddCustomer(customer: c3)
     AddCustomer(customer: c4)
     AddCustomer(customer: c5)
+    
 }
  
  
