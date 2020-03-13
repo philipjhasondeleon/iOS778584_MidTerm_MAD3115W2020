@@ -170,6 +170,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gvg-wN-IfV" id="dnN-o0-bOR"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bill Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5HZ-k5-hJc">
                                 <rect key="frame" x="20" y="280" width="374" height="34"/>
@@ -190,6 +193,9 @@
                     <navigationItem key="navigationItem" title="Add New Bill" id="EEM-lb-foy">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="AaE-yk-aqD"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField_Date" destination="9Fa-JD-ZoK" id="iRL-j8-0KJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb9-kx-Tv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
