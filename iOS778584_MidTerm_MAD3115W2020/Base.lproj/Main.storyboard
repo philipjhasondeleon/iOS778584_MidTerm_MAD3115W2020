@@ -186,6 +186,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8qO-q8-ahW">
+                                <rect key="frame" x="0.0" y="573" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="L7X-mu-3pl"/>
@@ -194,6 +198,8 @@
                         <barButtonItem key="rightBarButtonItem" title="Save" id="AaE-yk-aqD"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="pickerBillType" destination="8qO-q8-ahW" id="tdi-fK-ASJ"/>
+                        <outlet property="textBillType" destination="5HZ-k5-hJc" id="3gR-85-WWm"/>
                         <outlet property="textField_Date" destination="9Fa-JD-ZoK" id="iRL-j8-0KJ"/>
                     </connections>
                 </viewController>
