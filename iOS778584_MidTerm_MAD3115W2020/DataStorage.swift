@@ -53,12 +53,16 @@ func returnCount() -> Int
  
 func createCust()
 {
-   
-
     let c1 = Customer(id: 1, firstName: "Philip", lastName: "De Leon", email: "jhasondeleon@gmail.com")
+    let c2 = Customer(id: 2, firstName: "Afton", lastName: "Hawken", email: "ahawken0@stumbleupon.com")
+    let c3 = Customer(id: 3, firstName: "Perla", lastName: "Dudson", email: "pdudson1@businessweek.com")
+    let c4 = Customer(id: 4, firstName: "Ellene", lastName: "Sartain", email: "esartain2@canalblog.com")
+    let c5 = Customer(id: 5, firstName: "Shanie", lastName: "Peak", email: "speak4@ox.ac.uk")
     AddCustomer(customer: c1)
-   
-  
+    AddCustomer(customer: c2)
+    AddCustomer(customer: c3)
+    AddCustomer(customer: c4)
+    AddCustomer(customer: c5)
 }
  
  
