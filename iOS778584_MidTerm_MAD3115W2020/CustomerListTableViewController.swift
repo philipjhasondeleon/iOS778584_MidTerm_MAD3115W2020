@@ -34,9 +34,7 @@ class CustomerListTableViewController :UIViewController,UITableViewDelegate,UITa
     {
         self.navigationController?.popViewController(animated: true)
     }
-    
-
-
+  
 
     func numberOfSections(in tableView: UITableView) -> Int {
          return 1
