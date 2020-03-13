@@ -90,6 +90,7 @@ extension AddNewBillViewControllerViewController:UIPickerViewDelegate
         //self.lblCourseName.text = self.courseArray[row]
         
         let strBillTypeName = self.billType[pickerView.selectedRow(inComponent: PickerType.BillType.rawValue)]
+        self.textBillType.text = strBillTypeName
     }
 }
 
