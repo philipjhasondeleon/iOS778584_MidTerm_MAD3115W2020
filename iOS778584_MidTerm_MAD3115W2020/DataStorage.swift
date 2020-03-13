@@ -54,7 +54,7 @@ func returnCount() -> Int
 func createCust()
 {
    
-//let c1 = Customer(customerId: 1, firstName: "anu", lastName: "anu", email: "aas@gmail.com ")
+
     let c1 = Customer(id: 1, firstName: "Philip", lastName: "De Leon", email: "jhasondeleon@gmail.com")
     AddCustomer(customer: c1)
    
