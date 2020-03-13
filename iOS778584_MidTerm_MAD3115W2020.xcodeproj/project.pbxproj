@@ -20,6 +20,7 @@
 		9BAF2B4D2419C198001C83A6 /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF2B4C2419C198001C83A6 /* ShowBillDetailsViewController.swift */; };
 		9BAF2B4F2419C4D7001C83A6 /* AddNewBillViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAF2B4E2419C4D7001C83A6 /* AddNewBillViewControllerViewController.swift */; };
 		9BD29473241C2E380098A933 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD29472241C2E380098A933 /* Hydro.swift */; };
+		9BD29475241C2EAE0098A933 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD29474241C2EAE0098A933 /* Internet.swift */; };
 		9BD73914241465CA005D282A /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD73913241465CA005D282A /* CustomerListTableViewController.swift */; };
 		9BD7392024148868005D282A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7391F24148868005D282A /* Customer.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		9BAF2B4C2419C198001C83A6 /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 		9BAF2B4E2419C4D7001C83A6 /* AddNewBillViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewControllerViewController.swift; sourceTree = "<group>"; };
 		9BD29472241C2E380098A933 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		9BD29474241C2EAE0098A933 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		9BD73913241465CA005D282A /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		9BD7391F24148868005D282A /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 				9BD7391F24148868005D282A /* Customer.swift */,
 				9B4F47B7241AF9ED00C94A19 /* Bill.swift */,
 				9BD29472241C2E380098A933 /* Hydro.swift */,
+				9BD29474241C2EAE0098A933 /* Internet.swift */,
 			);
 			path = iOS778584_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				9B63D0C22411BAD300259835 /* AppDelegate.swift in Sources */,
 				9BD7392024148868005D282A /* Customer.swift in Sources */,
 				9BD73914241465CA005D282A /* CustomerListTableViewController.swift in Sources */,
+				9BD29475241C2EAE0098A933 /* Internet.swift in Sources */,
 				9BD29473241C2E380098A933 /* Hydro.swift in Sources */,
 				9B4F47B8241AF9ED00C94A19 /* Bill.swift in Sources */,
 				9BA9D0AB2416E877008D5C01 /* DataStorage.swift in Sources */,
