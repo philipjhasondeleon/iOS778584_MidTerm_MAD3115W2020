@@ -12,15 +12,24 @@ enum PickerType:Int {
     case BillType = 0
 }
 class AddNewBillViewControllerViewController: UIViewController {
+    
+    let b = DataStorage.getInstance()
 
     @IBOutlet weak var textField_Date: UITextField!
     @IBOutlet weak var pickerBillType: UIPickerView!
     @IBOutlet weak var textBillType: UITextField!
     
+    @IBOutlet weak var textBillId: UITextField!
+    @IBOutlet weak var textBillDate: UITextField!
+    @IBOutlet weak var textBillTotalAmount: UITextField!
     
     
     var billType = ["Hydro", "Internet", "Mobile"]
     var datePicker : UIDatePicker!
+    
+    var billId: Int!
+    var totalBillAmount: Double!
+    var bil : Bill!
     
     
     
@@ -29,6 +38,39 @@ class AddNewBillViewControllerViewController: UIViewController {
         
         self.pickerBillType.delegate = self
         self.pickerBillType.dataSource = self
+        
+        saveButton1()
+        
+    }
+    
+    
+    private func saveButton1()
+    {
+        let btnSave1 = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(AddNewBillViewControllerViewController.saveBill(sender:)))
+        
+        navigationItem.rightBarButtonItem=btnSave1
+        
+    }
+    
+    @objc
+    func saveBill(sender: UIBarButtonItem)
+    {
+        let sb1 = UIStoryboard(name: "Main", bundle: nil)
+        //let BillListVC = sb2.instantiateInitialViewController(identifier: "BillListVC") as! ShowBillDetailsViewController
+        let BillListVC = sb1.instantiateInitialViewController(identifier: "BillListVC") as! ShowBillDetailsViewController
+        
+        let bDate = textField_Date
+        let bType = textBillType
+        let bTotalAmount = textBillTotalAmount
+        
+        b.addNewBill(Bill_Date: bDate!, Bill_Type: bType!, Total_Bill_Amount: bTotalAmount!)
+        
+        let alert = UIAlertController(title: "Success", message: "Congrats! Added Successfully", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(alert: UIAlertAction!) in self.navigationController?.popViewController(animated: true)}))
+          
+         
+          self.present(alert, animated: true)
+        
         
     }
     

@@ -27,8 +27,6 @@ class AddNewCustomerViewController: UIViewController
         super.viewDidLoad()
         
         saveButton()
-
-        // Do any additional setup after loading the view.
     }
     
     

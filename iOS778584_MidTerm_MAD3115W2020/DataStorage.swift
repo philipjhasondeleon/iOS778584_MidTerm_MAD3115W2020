@@ -26,7 +26,7 @@ internal static func getInstance() -> DataStorage
   return obj
 }
 
-func addNewBill(Bill_Id: Int, Bill_Date: Date, Bill_Type: String, Total_Bill_Amount: Double)
+func addNewBill(Bill_Date: Date, Bill_Type: String, Total_Bill_Amount: Double)
 {
     let b = billDictionary.count + 1
     
