@@ -128,13 +128,6 @@ class AddNewBillViewControllerViewController: UIViewController {
 
 
 
-
-
-
-
-
-
-
 extension AddNewBillViewControllerViewController:UIPickerViewDelegate
 {
     //Set the Value for each row
